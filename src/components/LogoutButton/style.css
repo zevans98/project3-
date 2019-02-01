@@ -1,0 +1,25 @@
+#logout-btn {
+    background-color: transparent;
+    color: white;
+    display: flex;
+    font-size: 15px;
+    color: white;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 0;
+    margin-left: auto;
+    border-radius: 0;
+    width: 5%;
+}
+
+#logout-btn i {
+    display: contents;
+}
+
+#logout-btn.active,
+#logout-btn:hover {
+    background: linear-gradient(#213d44, #333);
+    color: bisque;
+}

@@ -1,0 +1,42 @@
+#authModal {
+    background-color: #212f35;
+    color: white;
+    text-align: center;
+    width: 430px;
+    height: 460px;
+}
+
+#authModal .tabular.menu {
+    height: 50px;
+}
+
+#authModal .tab {
+    background-color: #212f35;
+    border: none;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    color: #b58f55;
+}
+
+#authModal .ui.borderless.menu {
+    background: linear-gradient(#213d44, #000);
+    display: flex;
+    flex-direction: row;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+#authModal .ui.borderless.menu .item {
+    color: white;
+    font-weight: bolder;
+    flex: 1;
+    justify-content: center;
+    text-transform: uppercase;
+    border-bottom-right-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+#authModal .ui.borderless.menu .item.active {
+    border-bottom: 1px solid white;
+}

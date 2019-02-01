@@ -1,0 +1,21 @@
+.home-btn {
+    min-width: 10%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+    color: bisque;
+}
+
+.home-btn-text {
+    font-size: 20px;
+    background: -webkit-linear-gradient(bisque, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home-btn:hover {
+    color: bisque;
+}

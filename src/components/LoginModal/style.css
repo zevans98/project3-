@@ -1,0 +1,59 @@
+.login-pane {
+    padding: 0 40px;
+}
+
+.login-pane .ui.steamBtn.centered {
+    display: block;
+    margin: 8% auto;
+}
+
+.login-pane .horizontal.divider {
+    color: #b58f55;
+}
+
+.login-pane .horizontal.divider::before,
+.login-pane .horizontal.divider::after {
+    background-image: url(../../assets/img/divider.png);
+}
+
+.login-pane .fluid.input {
+    margin: 10px 0;
+}
+
+.login-pane .fluid.input input {
+    border-radius: 3px;
+    color: #b58f55;
+}
+
+.login-pane .login-row {
+    margin: 7% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.login-pane .login-row label {
+    color: #b58f55;
+}
+
+.login-pane .login-row label:hover {
+    color: #bdbcbf;
+}
+
+.login-pane .check-wrapper {
+    position: relative;
+    width: 50%;
+    text-align: left;
+}
+
+.login-pane .check-wrapper .ui.checkbox {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.login-pane .disclaimer {
+    text-align: justify;
+    font-size: 11px;
+    color: #bdbcbf;
+}

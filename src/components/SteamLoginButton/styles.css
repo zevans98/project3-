@@ -1,0 +1,21 @@
+.ui.button.steamBtn {
+    display: block;
+    border-radius: 3px;
+    text-decoration: none;
+    text-align: center;
+    background-color: #b58f55;
+    margin-bottom: 30px;
+    color: white;
+    text-transform: uppercase;
+}
+.ui.button.steamBtn i.steam {
+    background-color: transparent !important;
+}
+
+.ui.button.steamBtn i:before {
+    opacity: 1;
+}
+.ui.button.steamBtn i.icon.steam:before {
+    content: '\f1b6' !important;
+    color: white;
+}

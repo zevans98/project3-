@@ -1,0 +1,72 @@
+.signup-pane {
+    padding: 0 40px;
+}
+
+.signup-pane .ui.steamBtn.centered {
+    display: block;
+    margin: 8% auto;
+}
+
+.signup-pane .horizontal.divider {
+    color: #b58f55;
+}
+
+.signup-pane .horizontal.divider::before,
+.signup-pane .horizontal.divider::after {
+    background-image: url(../../assets/img/divider.png);
+}
+
+.signup-pane .fluid.input {
+    margin: 10px 0;
+}
+
+.signup-pane .fluid.input input {
+    border-radius: 3px;
+    color: #b58f55;
+}
+
+.signup-pane .signup-row {
+    margin: 7% auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.signup-pane .signup-row label {
+    color: #b58f55;
+}
+.signup-pane .signup-row label:hover {
+    color: #bdbcbf !important;
+}
+
+.signup-pane .check-wrapper {
+    position: relative;
+    width: 50%;
+    text-align: left;
+}
+
+.signup-pane .check-wrapper .ui.checkbox {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.signup-pane .ui.checkbox input:focus ~ label {
+    color: #b58f55;
+}
+
+.signup-pane .disclaimer {
+    text-align: justify;
+    font-size: 11px;
+    color: #bdbcbf;
+}
+
+.signup-pane #g-recaptcha {
+    margin: auto;
+    width: fit-content;
+}
+
+.signup-pane .signup-btn {
+    margin: 10px;
+    width: 50%;
+}
