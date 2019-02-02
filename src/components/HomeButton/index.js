@@ -13,7 +13,7 @@ export class HomeButton extends Component {
                     size="big"
                     className="home-btn-icon"
                 />
-                <div className="home-btn-text">Artifact Card Market</div>
+                <div className="home-btn-text">Pokemon Card Collector</div>
             </Link>
         );
     }
