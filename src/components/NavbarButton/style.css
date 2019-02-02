@@ -11,7 +11,7 @@
 
 .navbar-btn.active,
 .navbar-btn:hover {
-    background: linear-gradient(#213d44, #333);
+    background: linear-gradient(red, blue);
     color: bisque;
 }
 
@@ -31,7 +31,7 @@
 
 .navbar-btn.active .navbar-btn-text,
 .navbar-btn:hover .navbar-btn-text {
-    background: -webkit-linear-gradient(bisque, orange);
+    background: -webkit-linear-gradient(bisque, white);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
