@@ -1,0 +1,35 @@
+.offer-wrapper .ui.segment {
+    background: #131e24;
+    width: 90%;
+    margin: 20px auto 10px auto;
+    padding-top: 0;
+}
+.offer-container {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+    padding-top: 0;
+}
+
+.mine h2, .theirs h2 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: bisque;
+}
+
+.exchange-icn {
+    padding-top: 27px;
+}
+
+.offer-pane .horizontal.divider {
+    color: #b58f55;
+    font-size: 22px;
+}
+
+.offer-pane .horizontal.divider::before,
+.offer-pane .horizontal.divider::after {
+    background-image: url(../../assets/img/divider.png);
+}

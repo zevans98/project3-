@@ -1,0 +1,33 @@
+{
+    "env": {
+        "browser": true,
+        "commonjs": true,
+        "es6": true,
+        "mocha": true,
+        "node": false
+    },
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "plugins": ["react", "import", "jsx"],
+    "rules": {
+        "no-const-assign": "warn",
+        "no-this-before-super": "warn",
+        "no-undef": "warn",
+        "no-unreachable": "warn",
+        "no-unused-vars": "warn",
+        "constructor-super": "warn",
+        "valid-typeof": "warn",
+        "require-jsdoc": "off",
+        "linebreak-style": "off",
+        "react/jsx-uses-vars": ["error"],
+        "react/prop-types": [
+            "warn",
+            { "ignore": "ignore", "customValidators": "customValidator" }
+        ]
+    },
+    "extends": ["google", "plugin:react/recommended"]
+}

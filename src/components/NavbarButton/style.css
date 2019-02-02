@@ -1,0 +1,38 @@
+.navbar-btn {
+    display: inline-block;
+    font-size: 15px;
+    color: white;
+    text-transform: capitalize;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 0;
+}
+
+.navbar-btn.active,
+.navbar-btn:hover {
+    background: linear-gradient(#213d44, #333);
+    color: bisque;
+}
+
+.navbar-btn .navbar-btn-icon {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.navbar-btn-text {
+    font-weight: bold;
+    background: -webkit-linear-gradient(#eee, #c0c0c2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.navbar-btn.active .navbar-btn-text,
+.navbar-btn:hover .navbar-btn-text {
+    background: -webkit-linear-gradient(bisque, orange);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

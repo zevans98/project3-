@@ -1,0 +1,15 @@
+.inventory-grid.grid {
+    width: fit-content;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inventory-grid.grid .inventory-row {
+    margin: 0;
+    padding: 0;
+    width: fit-content !important;
+}
+
+.inventory-grid.grid .inventory-row .inventory-slot {
+    margin: 3px;
+}
