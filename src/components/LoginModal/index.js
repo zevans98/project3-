@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Divider, Input, Checkbox, Button} from 'semantic-ui-react';
-import {SteamLoginButton} from '../../components/SteamLoginButton';
+// import {SteamLoginButton} from '../../components/SteamLoginButton';
 import {userActions} from '../../redux/actions';
 import {connect} from 'react-redux';
 import PropTypes from 'prop-types';
@@ -32,12 +32,12 @@ export class LoginComponent extends Component {
     render() {
         return (
             <div className="login-pane">
-                <SteamLoginButton
-                    text={'Log in with steam'}
+                {/* <SteamLoginButton */}
+                    {/* text={'Log in with steam'}
                     className="centered"
                     fluid
-                />
-                <Divider horizontal>Or</Divider>
+                /> */}
+                {/* <Divider horizontal>Or</Divider> */}
                 <Input fluid placeholder="Email" />
                 <Input fluid placeholder="Password" type="password" />
                 <div className="login-row">
@@ -49,9 +49,7 @@ export class LoginComponent extends Component {
                 <div className="forgot-pwd">Forgot your password ?</div>
                 <Divider />
                 <p className="disclaimer">
-                    {`If you click "Log in with Steam" and are not a ACM user
-                    user, you will be registered and you agree to ACM Terms of
-                    Use and Privacy policy.`}
+                    {`By creating an account you are agreeing to the Sokovia Accords`}
                 </p>
             </div>
         );
