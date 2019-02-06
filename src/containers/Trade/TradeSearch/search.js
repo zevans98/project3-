@@ -1,5 +1,5 @@
 const axios =  require('axios');
-const jquery = require('jquery');
+
 
 function pokeSearch(){
    var pokeName = document.getElementById('textBox').value;
@@ -11,9 +11,12 @@ function pokeSearch(){
                     
                    function show_image(src, width, height, alt) {
                     var img = document.createElement("img");
-                  // img.src = response.data.sprites.front_shiny
-                    img.width = '500px';
-                    img.height = '500px';
+
+                    img.src = response.data.sprites.front_shiny
+                    img.width = 500;
+                    img.height = 500;
+
+
                     img.alt = "howdy";
                 
                     // This next line will just add it to the <body> tag
