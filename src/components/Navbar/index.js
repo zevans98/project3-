@@ -19,7 +19,7 @@ const menus = [
         icon: 'add circle',
     },
     {
-        title: 'Search trade',
+        title: 'Search poke',
         link: '/searchtrade',
         icon: 'search',
     },
