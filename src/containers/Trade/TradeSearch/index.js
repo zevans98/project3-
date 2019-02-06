@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import card from './cards'
 import pokeSearch from './search';
-
+import $ from 'jquery'
 export class TradeSearch extends Component {
 
     
