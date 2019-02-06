@@ -26,6 +26,7 @@
 }
 
 .login-pane .login-row {
+    padding: 30px;
     margin: 7% auto;
     display: flex;
     flex-direction: row;

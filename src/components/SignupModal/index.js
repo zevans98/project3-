@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Divider, Input, Checkbox, Button} from 'semantic-ui-react';
-import {SteamLoginButton} from '../../components/SteamLoginButton';
+// import {SteamLoginButton} from '../../components/SteamLoginButton';
 import Recaptcha from 'react-recaptcha';
 import {connect} from 'react-redux';
 import {userActions} from '../../redux/actions';
@@ -70,12 +70,12 @@ export class SignupModalComponent extends Component {
     render() {
         return (
             <div className="signup-pane">
-                <SteamLoginButton
+                {/* <SteamLoginButton
                     text={'Sign up with steam'}
                     className="centered"
-                    fluid
-                />
-                <Divider horizontal>Or</Divider>
+                    fluid */}
+                {/* />
+                <Divider horizontal>Or</Divider> */}
                 <Input
                     fluid
                     placeholder="Email"

@@ -1,6 +1,6 @@
 #navbar {
     width: 100%;
-    background: linear-gradient(#213d44, #000);
+    background: linear-gradient(blue, red);
     display: flex;
     flex-direction: row;
 }
