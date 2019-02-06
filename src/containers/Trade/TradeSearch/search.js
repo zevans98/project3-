@@ -1,5 +1,8 @@
 const axios =  require('axios');
 
+const $ = require('jquery');
+=======
+
 
 function pokeSearch(){
    var pokeName = document.getElementById('textBox').value;
@@ -7,30 +10,22 @@ function pokeSearch(){
     axios.get('https://pokeapi.co/api/v2/pokemon/'+pokeName).then(function(response){
        // var image = response.sprites.front_shiny;
                   //  var body = response.name;
+                  console.log(response);
                    console.log(response.data.sprites.front_shiny);
-                    
-                   function show_image(src, width, height, alt) {
-                    var img = document.createElement("img");
 
-                    img.src = response.data.sprites.front_shiny
-                    img.width = 500;
-                    img.height = 500;
+                   var image = response.data.sprites.front_shiny;
+                   var body = response.name;
+                   var pokeImage = $('<div class="col-md-4" <div class="card" style="width: 18rem;"><img src="'+image+' " class="card-img-top" alt="..."><div class="card-body"><h5 class="card-title">'+body+'</h5><p class="card-text">pokemon</p></div> </div></div> ');
 
+                   //pokeImage.attr("src", image);
+                   console.log(pokeImage.attr)
+=======
 
-                    img.alt = "howdy";
-                
-                    // This next line will just add it to the <body> tag
-                    document.body.appendChild(img);
-                }
-                
-                
-                
-                show_image();
                     //pokeImage.attr("src", image);
                     //console.log(pokeImage.attr)
 
-                   document.getElementById("images").appendChild
-                   
+
+                   $("#images").append(pokeImage);
     })
 }
 
