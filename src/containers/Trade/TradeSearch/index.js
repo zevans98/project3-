@@ -41,15 +41,29 @@ export class TradeSearch extends Component {
             <div id="searchDiv"><button id="button" className="btn btn-danger" onClick ={this.change.bind(this) }>SEARCH</button></div>
             <div className = 'container'>
             <div className = "container">
-                <div className = "card" id= "mainBox">
+            <div  id="sideBox"className ="row">
+            <div className ="col col-md-3">
+            <button type="button" id="addButton"class="btn btn-primary changer">Shiny</button>
+            <button type="button" id="addButton"class="btn btn-primary changer">Normal</button>
+
+            <button type="button" id="addButton"class="btn btn-primary changer">back</button>
+
+            <br>
+            </br>
+            
+            </div>
+            <div className ="col col-md-6"><div className = "card" id= "mainBox">
                     <img src={this.state.sprite}  className="card-img-top"></img>
                     <hr></hr>
                     <div className='card-body'>
                         <h1 className='card-text'>{this.state.name}</h1>
                         <button type="button" id="addButton"class="btn btn-danger">ADD</button>
+                        </div>
                     </div>
                 </div>
-            </div>
+            <div className ="col col-md-2"></div>
+            </div></div>
+                
             <div id="images" className='row'>
             
             </div>
