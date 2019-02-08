@@ -1,4 +1,5 @@
 const Counter = require('../../models/Pokemon');
+const User = require('../../models/User');
 
 module.exports = (app) => {
   app.get('/api/counters', (req, res, next) => {
@@ -8,11 +9,27 @@ module.exports = (app) => {
       .catch((err) => next(err));
   });
 
+  app.post('/api/users/:user_id', function (req, res) {
+    User.update({"_id": req.params.user_id}, {$push: {pokemon: req.body}})
+    // var user = User.findById(req.params.user_id);
+    // user.save()
+    .then((data) => res.json(data))
+    .catch(err => res.json(err));
+  });
+
+  app.post('/api/users', function (req, res) {
+    var user = new User(req.body);
+    user.save()
+    .then((data) => res.json(data))
+    .catch(err => res.json(err));
+  });
+
   app.post('/api/counters', function (req, res, next) {
-    const counter = new Counter();
+    counter = new Counter(req.body);
+    console.log(req.body, counter);
 
     counter.save()
-      .then(() => res.json(counter))
+      .then((data) => res.json(data))
       .catch((err) => next(err));
   });
 

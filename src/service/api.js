@@ -1,7 +1,7 @@
 // Class containing all API calls specifications
 import axios from 'axios';
 
-const apiUrl = 'http://localhost:8080';
+const apiUrl = 'http://localhost:3001';
 const POST = 'POST';
 const GET = 'GET';
 const POST_FORM = 'POST-FORM';
