@@ -8,7 +8,7 @@
 }
 
 .signup-pane .horizontal.divider {
-    color: #b58f55;
+    color: lightsteelblue;
 }
 
 .signup-pane .horizontal.divider::before,
@@ -22,7 +22,7 @@
 
 .signup-pane .fluid.input input {
     border-radius: 3px;
-    color: #b58f55;
+    color: lightsteelblue;
 }
 
 .signup-pane .signup-row {
@@ -33,7 +33,7 @@
 }
 
 .signup-pane .signup-row label {
-    color: #b58f55;
+    color: lightsteelblue;
 }
 .signup-pane .signup-row label:hover {
     color: #bdbcbf !important;
@@ -52,7 +52,7 @@
 }
 
 .signup-pane .ui.checkbox input:focus ~ label {
-    color: #b58f55;
+    color: lightsteelblue;
 }
 
 .signup-pane .disclaimer {
