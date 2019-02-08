@@ -26,3 +26,8 @@ text-align: center
     width: 30rem;
     border:solid
 }
+.changer{
+    margin-top: 30%;
+    text-align: right;
+    margin-right: 0px;
+}
