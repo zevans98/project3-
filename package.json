@@ -4,7 +4,13 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "concurrently": "^4.1.0",
+    "connect-history-api-fallback": "^1.6.0",
+    "express": "^4.16.4",
+    "fs": "^0.0.1-security",
     "jquery": "^3.3.1",
+    "mongoose": "^5.4.10",
+    "path": "^0.12.7",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "react-recaptcha": "^2.3.10",
@@ -14,10 +20,12 @@
     "redux": "^4.0.0",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0",
-    "semantic-ui-react": "^0.82.3"
+    "semantic-ui-react": "^0.82.3",
+    "webpack": "^4.29.3",
+    "webpack-dev-middleware": "^3.5.2"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"react-scripts start\" \"cd ./server && npm start\"",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
