@@ -16,7 +16,7 @@ module.exports = (app) => {
       type: req.body.type
     })
     .then((counter) => res.json(counter))
-    .catch(err => res.json(err));
+    .catch(err => res.json('post error',err));
   });
 
   app.post('/api/users/:user_id', function (req, res) {

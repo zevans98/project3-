@@ -3,6 +3,7 @@ const fs = require('fs');
 const historyApiFallback = require('connect-history-api-fallback');
 const mongoose = require('mongoose');
 const path = require('path');
+const cors = require('cors')
 // const webpack = require('webpack');
 // const webpackDevMiddleware = require('webpack-dev-middleware');
 // const webpackHotMiddleware = require('webpack-hot-middleware');
@@ -22,6 +23,7 @@ mongoose.connect(isDev ? config.db_dev : config.db);
 mongoose.Promise = global.Promise;
 
 const app = express();
+app.use(cors())
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
