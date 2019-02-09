@@ -2,11 +2,21 @@ const Counter = require('../../models/Pokemon');
 const User = require('../../models/User');
 
 module.exports = (app) => {
-  app.get('/api/counters', (req, res, next) => {
+  app.get('/api/pokemon_collection', (req, res, next) => {
     Counter.find()
       .exec()
       .then((counter) => res.json(counter))
       .catch((err) => next(err));
+  });
+
+  app.post('/api/pokemon_collection', function (req, res) {
+    Counter.create({
+      name: req.body.name,
+      sprite: req.body.sprite,
+      type: req.body.type
+    })
+    .then((counter) => res.json(counter))
+    .catch(err => res.json(err));
   });
 
   app.post('/api/users/:user_id', function (req, res) {
