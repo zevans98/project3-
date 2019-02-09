@@ -5,8 +5,7 @@ import $ from 'jquery';
 import './style.css'
 import secondSearch from './search'
 const axios = require('axios');
-const mongoose = require('mongoose');
-//const pokemon = require('../../../models2/pokemodels')
+const mongoose = require('mongoose')
 export class TradeSearch extends Component {
         
     state = {
@@ -17,7 +16,9 @@ export class TradeSearch extends Component {
 
     // newPokemon() {
     //    let newPokemon = new pokemon({
-    //     name: "charizard"
+    //     name: this.state.name,
+    //     sprite: this.state.sprite,
+    //     type: this.state.type,
     //    })
     //    newPokemon.save().then(doc=>{console.log(doc)}).catch(err=>{
     //        console.log(err)

@@ -1,0 +1,17 @@
+#hello{
+    background-color:white;
+    margin-left:25%;
+    margin-right:25%;
+    text-align: center;
+    margin-top: 5%;
+    border: solid;
+
+}
+
+#cards{
+    height: 400px;
+    margin-top: 10%;
+    background-color: white;
+    border: solid;
+    background-blend-mode: normal;
+}
