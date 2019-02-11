@@ -8,42 +8,28 @@ import axios from "axios";
 export class MyTrades extends Component {
 
 
+  state = {
+    pokemons: []
+  }
 
-componentDidMount() {
+  componentDidMount() {
+    axios.get(`/api/pokemon_collection`)
+      .then(res => {
+        const pokemons = res.data;
+        this.setState({ pokemons });
+      })
+  }
 
+  render() {
+    return (
+      <ul>
+        { this.state.pokemons.map(pokemon => <li>{pokemon.name}</li>)}
+        { this.state.pokemons.map(pokemon => <li>{pokemon.sprite}</li>)}
+        { this.state.pokemons.map(pokemon => <li>{pokemon.type}</li>)}
 
-
-  axios.get("/api/pokemon_collection").then(function(response) {
-    console.log(response)
-
-  })
-}
-
-render() {
-
-console.log()
-return <div>
-
-        <div className="col col-md-6"><div className="card" id="mainBox">
-          <img id="spriteSize" src={"this.state.sprite"} className="card-img-top"></img>
-          <hr></hr>
-          <div className='card-body'>
-            <h1 className='card-text' name='body'>{"this.state.name"}</h1>
-            <h2>TYPE:  {"Hi"}</h2>
-            <button onClick={"this.newPokemon"} type="button" id="addButton" class="btn btn-danger">ADD</button>
-          </div>
-        </div>
-        </div>
-        <div className="col col-md-2"></div>
-
-
-    <div id="images" className='row'>
-
-    </div>
-  </div>
-
-}
-
+      </ul>
+    )
+  }
 }
 
 export default MyTrades;
