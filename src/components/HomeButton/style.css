@@ -6,7 +6,7 @@
     align-items: center;
     flex-direction: column;
     padding: 0 20px;
-    color: white;
+    color: yellow;
 }
 
 .home-btn-text {
@@ -18,5 +18,5 @@
 
 .home-btn:hover {
   background: linear-gradient(red, blue);
-  color: bisque;
+  color:yellow;
 }
