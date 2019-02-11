@@ -20,6 +20,6 @@
 
 #logout-btn.active,
 #logout-btn:hover {
-    background: linear-gradient(#213d44, #333);
+    background: linear-gradient(red, blue);
     color: bisque;
 }

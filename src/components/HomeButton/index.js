@@ -9,7 +9,7 @@ export class HomeButton extends Component {
         return (
             <Link to="/" className="home-btn">
                 <Icon
-                    name="shopping basket"
+                    name="star"
                     size="big"
                     className="home-btn-icon"
                 />

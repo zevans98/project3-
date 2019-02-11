@@ -9,19 +9,19 @@ import PropTypes from 'prop-types';
 
 const menus = [
     {
-        title: 'My Trades',
-        link: '/mytrades',
-        icon: 'exchange',
+        title: 'My Collection',
+        link: '/mycollection',
+        icon: 'briefcase',
     },
     {
-        title: 'Add trade',
-        link: '/addtrade',
-        icon: 'add circle',
+        title: 'Make Trade',
+        link: '/maketrade',
+        icon: 'dollar',
     },
     {
-        title: 'Search poke',
-        link: '/searchtrade',
-        icon: 'search',
+        title: 'Add Pokemon',
+        link: '/addpokemon',
+        icon: 'plus',
     },
 ];
 

@@ -56,17 +56,17 @@ class App extends Component {
                     <Route exact path="/" component={HomeComponent} />
                     {/* TRADES  */}
                     <PrivateRoute
-                        path="/mytrades"
+                        path="/mycollection"
                         component={MyTrades}
                         fallbackUrl="/"
                     />
                     <PrivateRoute
-                        path="/addtrade"
+                        path="/maketrade"
                         component={AddTrade}
                         fallbackUrl="/"
                     />
                     <PrivateRoute
-                        path="/searchtrade"
+                        path="/addpokemon"
                         component={TradeSearch}
                         fallbackUrl="/"
                     />
