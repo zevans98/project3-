@@ -22,12 +22,14 @@ export class MyTrades extends Component {
       .then(res => {
         const pokemons = res.data;
         this.setState({ pokemons });
+
         console.log(pokemons)
       });
 
   };
  
   
+
 
   
   myFunction =(item,index)=>{
@@ -37,6 +39,7 @@ export class MyTrades extends Component {
 }
   
   render() {
+
       
       return (
      
@@ -56,6 +59,7 @@ export class MyTrades extends Component {
           
 
       </div>
+
       
     )
   }
