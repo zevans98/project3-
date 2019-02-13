@@ -2,14 +2,14 @@ const Counter = require('../../models/Pokemon');
 const User = require('../../models/User');
 
 module.exports = (app) => {
-  app.get('/api/pokemon_collection', (req, res, next) => {
+  app.get('https://evening-cliffs-22103.herokuapp.com/api/pokemon_collection', (req, res, next) => {
     Counter.find()
       .exec()
       .then((counter) => res.json(counter))
       .catch((err) => next(err));
   });
 
-  app.post('/api/pokemon_collection', function (req, res) {
+  app.post('https://evening-cliffs-22103.herokuapp.com/api/pokemon_collection', function (req, res) {
     Counter.create({
       name: req.body.name,
       sprite: req.body.sprite,
