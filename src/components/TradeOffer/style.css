@@ -1,5 +1,5 @@
 .offer-wrapper .ui.segment {
-    background: #131e24;
+    background: #2f5d76;
     width: 90%;
     margin: 20px auto 10px auto;
     padding-top: 0;
@@ -17,7 +17,7 @@
     margin-bottom: 20px;
     font-size: 25px;
     font-weight: bold;
-    color: bisque;
+    color: rgb(248, 246, 242);
 }
 
 .exchange-icn {
@@ -25,7 +25,7 @@
 }
 
 .offer-pane .horizontal.divider {
-    color: #b58f55;
+    color: #f8f6f2;
     font-size: 22px;
 }
 
