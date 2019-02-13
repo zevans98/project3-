@@ -17,17 +17,25 @@ export class MyTrades extends Component {
       .then(res => {
         const pokemons = res.data;
         this.setState({ pokemons });
+        console.log(res.data);
       })
   }
 
   render() {
     return (
+      
       <ul>
         { this.state.pokemons.map(pokemon => <li>{pokemon.name}</li>)}
+        <hr></hr>
         { this.state.pokemons.map(pokemon => <li>{pokemon.sprite}</li>)}
+        <hr></hr>
         { this.state.pokemons.map(pokemon => <li>{pokemon.type}</li>)}
 
       </ul>
+      
+
+
+      
     )
   }
 }
