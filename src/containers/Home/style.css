@@ -1,11 +1,12 @@
 body {
-  background-image: url("https://cdn.vox-cdn.com/thumbor/j4HaCYbq1c2b4nX7rX9gdksjtJc=/312x0:1746x956/1200x800/filters:focal(312x0:1746x956)/cdn.vox-cdn.com/uploads/chorus_image/image/37251612/pokemon-list.0.0.png");
+  /* background-image: url("https://cdn.vox-cdn.com/thumbor/j4HaCYbq1c2b4nX7rX9gdksjtJc=/312x0:1746x956/1200x800/filters:focal(312x0:1746x956)/cdn.vox-cdn.com/uploads/chorus_image/image/37251612/pokemon-list.0.0.png"); */
+  background-image: url("./pokemon.jpg");
   padding: 0;
   margin: 0 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-blend-mode: overlay;
+  /* background-blend-mode: soft-light; */
 
 
 }
