@@ -36,4 +36,14 @@ text-align: center;
     text-align: right;
     margin-right: 0px;
 }
+#cards{
+    margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+    
+}
+#pokemon{
+background-color: white;
+width: 30rem
+}
 

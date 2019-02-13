@@ -6,6 +6,7 @@
     "axios": "^0.18.0",
     "concurrently": "^4.1.0",
     "connect-history-api-fallback": "^1.6.0",
+    "cors": "^2.8.5",
     "express": "^4.16.4",
     "fs": "^0.0.1-security",
     "jquery": "^3.3.1",
