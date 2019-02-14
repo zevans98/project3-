@@ -14,7 +14,13 @@ Quickly search and add Pokemon to your collection.
 
 ## How to use
 
-This app is hosted on heroku: [Pokemon Card Collector](https://evening-cliffs-22103.herokuapp.com/)
+* This app is hosted on heroku: [Pokemon Card Collector](https://evening-cliffs-22103.herokuapp.com/)
+
+## Contributors
+
+* RClark4958
+* zevans98
+* Itzae801
 
 
 
