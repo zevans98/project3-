@@ -4,12 +4,12 @@ const historyApiFallback = require('connect-history-api-fallback');
 const mongoose = require('mongoose');
 const path = require('path');
 const cors = require('cors')
-// const webpack = require('webpack');
-// const webpackDevMiddleware = require('webpack-dev-middleware');
-// const webpackHotMiddleware = require('webpack-hot-middleware');
+const webpack = require('webpack');
+const webpackDevMiddleware = require('webpack-dev-middleware');
+const webpackHotMiddleware = require('webpack-hot-middleware');
 
 const config = require('../config/config');
-// const webpackConfig = require('../webpack.config');
+const webpackConfig = require('../webpack.config');
 
 const isDev = process.env.NODE_ENV !== 'production';
 const port  = process.env.PORT || 3001;
@@ -38,26 +38,26 @@ app.use(express.json());
 require('./routes')(app);
 
 if (isDev) {
-  // const compiler = webpack(webpackConfig);
+  const compiler = webpack(webpackConfig);
 
   app.use(historyApiFallback({
     verbose: false
   }));
 
-  // app.use(webpackDevMiddleware(compiler, {
-  //   publicPath: webpackConfig.output.publicPath,
-  //   contentBase: path.resolve(__dirname, '../client/public'),
-  //   stats: {
-  //     colors: true,
-  //     hash: false,
-  //     timings: true,
-  //     chunks: false,
-  //     chunkModules: false,
-  //     modules: false
-  //   }
-  // }));
+  app.use(webpackDevMiddleware(compiler, {
+    publicPath: webpackConfig.output.publicPath,
+    contentBase: path.resolve(__dirname, '../client/public'),
+    stats: {
+      colors: true,
+      hash: false,
+      timings: true,
+      chunks: false,
+      chunkModules: false,
+      modules: false
+    }
+  }));
 
-  // app.use(webpackHotMiddleware(compiler));
+  app.use(webpackHotMiddleware(compiler));
   app.use(express.static(path.resolve(__dirname, '../dist')));
 } else {
   app.use(express.static(path.resolve(__dirname, '../dist')));
