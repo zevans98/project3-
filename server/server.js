@@ -19,8 +19,13 @@ const port  = process.env.PORT || 3001;
 // ================================================================================================
 
 // Set up Mongoose
-mongoose.connect(isDev ? config.db_dev : config.db);
 mongoose.Promise = global.Promise;
+mongoose.connect(
+  process.env.MONGODB_URI || "mongodb://heroku_8dxx5gp2:k1vscn31amnhr5fd8jp1bs51mq@ds335275.mlab.com:35275/heroku_8dxx5gp2",
+  {
+    useMongoClient: true 
+  });
+
 
 const app = express();
 app.use(cors())
