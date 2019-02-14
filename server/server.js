@@ -14,6 +14,13 @@ const config = require('../config/config');
 const isDev = process.env.NODE_ENV !== 'production';
 const port  = process.env.PORT || 3001;
 
+if (process.env.NODE_ENV === 'production') {
+	app.use(express.static('client/build'));
+}
+app.get('*', (request, response) => {
+	response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+});
+
 
 // Configuration
 // ================================================================================================
