@@ -1,6 +1,6 @@
 // Copy this file as config.js in the same folder, with the proper database connection URI.
 
 module.exports = {
-  db: 'mongodb://heroku_8dxx5gp2:k1vscn31amnhr5fd8jp1bs51mq@ds335275.mlab.com:35275/heroku_8dxx5gp2',
+  db: 'mongodb://username:password@url:port/db',
   db_dev: 'mongodb://localhost:27017/pokemon',
 };
